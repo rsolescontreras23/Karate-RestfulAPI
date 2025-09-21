@@ -39,4 +39,4 @@ Feature: Eliminamos complemente un objeto con un ID válido en Restful Api
     Given path 'objects', obId
     When method GET
     Then status 404
-    * print 'Objeto modificado obtenido: ', response
+    * print 'Mensaje de objeto no encontrado: ', response
