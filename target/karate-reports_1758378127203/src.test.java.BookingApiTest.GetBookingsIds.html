@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"b182e15b-e6cc-41a5-b9f0-8781dd708a79",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.BookingApiTest.GetBookingsIds</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-09-20 09:20:50 a. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Obtener todas las reservas válidas</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/BookingApiTest/GetBookingsIds.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Obtener todas las reservas</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Obtener todas las reservas válidas</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>304</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com/booking&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">304</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">09:20:50.192 request:
+1 &gt; GET https://restful-booker.herokuapp.com/booking
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.16)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:20:50.493 response time in milliseconds: 299
+1 &lt; 200
+1 &lt; Content-Length: 1709
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sat, 20 Sep 2025 14:20:53 GMT
+1 &lt; Etag: W/&quot;6ad-p/cYB8rIkP2Epi6xGSVPBx5pHpQ&quot;
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=vcyr2vFngru%2FZMTaYws8Rue7twEqc4zFV1l6jVoI3HA%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1758378053&quot;}],&quot;max_age&quot;:3600}
+1 &lt; Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=vcyr2vFngru%2FZMTaYws8Rue7twEqc4zFV1l6jVoI3HA%3D&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;ts=1758378053&quot;
+1 &lt; Server: Heroku
+1 &lt; Via: 1.1 heroku-router
+1 &lt; X-Powered-By: Express
+[{&quot;bookingid&quot;:98},{&quot;bookingid&quot;:90},{&quot;bookingid&quot;:65},{&quot;bookingid&quot;:94},{&quot;bookingid&quot;:93},{&quot;bookingid&quot;:15},{&quot;bookingid&quot;:92},{&quot;bookingid&quot;:26},{&quot;bookingid&quot;:110},{&quot;bookingid&quot;:68},{&quot;bookingid&quot;:89},{&quot;bookingid&quot;:36},{&quot;bookingid&quot;:73},{&quot;bookingid&quot;:97},{&quot;bookingid&quot;:33},{&quot;bookingid&quot;:59},{&quot;bookingid&quot;:70},{&quot;bookingid&quot;:54},{&quot;bookingid&quot;:106},{&quot;bookingid&quot;:16},{&quot;bookingid&quot;:79},{&quot;bookingid&quot;:41},{&quot;bookingid&quot;:95},{&quot;bookingid&quot;:46},{&quot;bookingid&quot;:42},{&quot;bookingid&quot;:119},{&quot;bookingid&quot;:34},{&quot;bookingid&quot;:88},{&quot;bookingid&quot;:77},{&quot;bookingid&quot;:63},{&quot;bookingid&quot;:99},{&quot;bookingid&quot;:84},{&quot;bookingid&quot;:52},{&quot;bookingid&quot;:6},{&quot;bookingid&quot;:105},{&quot;bookingid&quot;:86},{&quot;bookingid&quot;:48},{&quot;bookingid&quot;:121},{&quot;bookingid&quot;:21},{&quot;bookingid&quot;:2},{&quot;bookingid&quot;:61},{&quot;bookingid&quot;:74},{&quot;bookingid&quot;:104},{&quot;bookingid&quot;:1},{&quot;bookingid&quot;:55},{&quot;bookingid&quot;:66},{&quot;bookingid&quot;:56},{&quot;bookingid&quot;:3},{&quot;bookingid&quot;:20},{&quot;bookingid&quot;:11},{&quot;bookingid&quot;:112},{&quot;bookingid&quot;:114},{&quot;bookingid&quot;:116},{&quot;bookingid&quot;:57},{&quot;bookingid&quot;:60},{&quot;bookingid&quot;:71},{&quot;bookingid&quot;:50},{&quot;bookingid&quot;:9},{&quot;bookingid&quot;:32},{&quot;bookingid&quot;:108},{&quot;bookingid&quot;:27},{&quot;bookingid&quot;:39},{&quot;bookingid&quot;:107},{&quot;bookingid&quot;:100},{&quot;bookingid&quot;:101},{&quot;bookingid&quot;:22},{&quot;bookingid&quot;:13},{&quot;bookingid&quot;:24},{&quot;bookingid&quot;:75},{&quot;bookingid&quot;:4},{&quot;bookingid&quot;:72},{&quot;bookingid&quot;:8},{&quot;bookingid&quot;:103},{&quot;bookingid&quot;:37},{&quot;bookingid&quot;:76},{&quot;bookingid&quot;:14},{&quot;bookingid&quot;:113},{&quot;bookingid&quot;:28},{&quot;bookingid&quot;:83},{&quot;bookingid&quot;:10},{&quot;bookingid&quot;:30},{&quot;bookingid&quot;:45},{&quot;bookingid&quot;:5},{&quot;bookingid&quot;:43},{&quot;bookingid&quot;:47},{&quot;bookingid&quot;:120},{&quot;bookingid&quot;:40},{&quot;bookingid&quot;:49},{&quot;bookingid&quot;:7},{&quot;bookingid&quot;:29},{&quot;bookingid&quot;:82},{&quot;bookingid&quot;:23},{&quot;bookingid&quot;:85},{&quot;bookingid&quot;:64},{&quot;bookingid&quot;:12},{&quot;bookingid&quot;:118},{&quot;bookingid&quot;:81},{&quot;bookingid&quot;:19},{&quot;bookingid&quot;:35},{&quot;bookingid&quot;:53}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

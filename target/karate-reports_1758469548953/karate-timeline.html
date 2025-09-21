@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/RestfulApi\/GetObjectByID[1:7]","start":1758469064415,"end":1758469066260,"title":"src\/test\/java\/RestfulApi\/GetObjectByID[1:7] 10:37:44.415-10:37:46.260 Obtenemos un objeto usando una ID válida"},{"id":2,"group":1,"content":"src\/test\/java\/RestfulApi\/GetObjects[1:7]","start":1758469066647,"end":1758469067302,"title":"src\/test\/java\/RestfulApi\/GetObjects[1:7] 10:37:46.647-10:37:47.302 Obtener todos los objetos válidos"},{"id":3,"group":1,"content":"src\/test\/java\/RestfulApi\/PostObject[1:7]","start":1758469067348,"end":1758469068705,"title":"src\/test\/java\/RestfulApi\/PostObject[1:7] 10:37:47.348-10:37:48.705 Crear un nuevo objeto"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

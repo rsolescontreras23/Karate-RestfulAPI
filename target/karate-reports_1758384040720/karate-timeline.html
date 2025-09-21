@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/BookingApiTest\/BookingE2e[1:7]","start":1758383859436,"end":1758383860718,"title":"src\/test\/java\/BookingApiTest\/BookingE2e[1:7] 10:57:39.436-10:57:40.718 Hacer un feature que tenga el método POST, GET BY ID, PUT, DELETE"},{"id":2,"group":1,"content":"src\/test\/java\/BookingApiTest\/DeleteBooking[1:8]","start":1758383861127,"end":1758383861418,"title":"src\/test\/java\/BookingApiTest\/DeleteBooking[1:8] 10:57:41.127-10:57:41.418 Login y eliminar un booking"},{"id":3,"group":1,"content":"src\/test\/java\/BookingApiTest\/GetBookingById[1:8]","start":1758383861477,"end":1758383862065,"title":"src\/test\/java\/BookingApiTest\/GetBookingById[1:8] 10:57:41.477-10:57:42.065 Obtener una reserva usando un ID válido"},{"id":4,"group":1,"content":"src\/test\/java\/BookingApiTest\/GetBookings[1:3]","start":1758383862105,"end":1758383862595,"title":"src\/test\/java\/BookingApiTest\/GetBookings[1:3] 10:57:42.105-10:57:42.595 Obtener todas las reservas válidas"},{"id":5,"group":1,"content":"src\/test\/java\/BookingApiTest\/PostBooking[1:7]","start":1758383862624,"end":1758383862931,"title":"src\/test\/java\/BookingApiTest\/PostBooking[1:7] 10:57:42.624-10:57:42.931"},{"id":6,"group":1,"content":"src\/test\/java\/BookingApiTest\/PutBooking[1:7]","start":1758383862980,"end":1758383863571,"title":"src\/test\/java\/BookingApiTest\/PutBooking[1:7] 10:57:42.980-10:57:43.571 Actualizar un booking existente.","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
